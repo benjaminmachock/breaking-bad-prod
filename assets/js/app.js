@@ -4,7 +4,7 @@ $(document).ready(function () {
   //FUNCTIONS
   var getRandomChar = function () {};
 
-  var allChars = function () {
+  var getAllChars = function () {
     //fetch all chars and dynamically create cards for each char in the array
   };
 
