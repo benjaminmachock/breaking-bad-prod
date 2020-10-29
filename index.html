@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      body {
+        font-family: "Righteous", cursive;
+      }
+
+      .char-image {
+        width: 300px;
+        height: 300px;
+        border: 5px solid white;
+      }
+
+      footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <title>Breaking Bad</title>
+  </head>
+  <body>
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">About</h4>
+              <p class="text-muted">
+                Add some information about the album below, the author, or any
+                other background context. Make it a few sentences long so folks
+                can pick up some informative tidbits. Then, link them off to
+                some social networking sites or contact information.
+              </p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Contact</h4>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                <li><a href="#" class="text-white">Like on Facebook</a></li>
+                <li><a href="#" class="text-white">Email me</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="navbar navbar-dark shadow-sm"
+        style="background-color: #00892b"
+      >
+        <div class="container d-flex justify-content-between">
+          <a href="#" title="Walter White Icon #97023" style="color: white"><img src="https://icon-library.net//images/walter-white-icon/walter-white-icon-21.jpg" width="100">
+              <path
+                d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"
+              />
+              <circle cx="12" cy="13" r="4" />
+            </svg>
+            <strong style="font-size: 25px">Breaking Bad</strong>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+      <section class="jumbotron text-center" style="background-color: black">
+        <div class="container">
+          <h2 style="color: white">Click For A Random Character</h2>
+          
+            <button
+              id="random-char"
+              type="button"
+              class="btn btn-outline-success"
+              style="font-size: 20px;"
+            >
+              View Random
+            </button>
+          
+          <div id="display-char" style="color:white"></div>
+        </div>
+      </section>
+      <section>
+      <div style="display: flex; justify-content: center">
+        
+        <button id="all-chars" class="btn btn-primary" style="font-size: 20px;">View Characters</button>
+      </div>
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div id="cards" class="row"></div>
+        </div>
+      </div>
+    </section>
+    <section class="jumbotron text-center" style="background-color: black">
+      
+      <button id="select-char" class="btn btn-outline-success" style="font-size: 20px;">Select Character</button>
+    
+      <div class="container">
+        
+
+
+
+      </div>
+
+
+    </section>
+    </main>
+    <footer style="background-color: #00892b; color: white; text-align: center">
+      <div class="container">
+        <h2>Breaking Bad</h2>
+        <p>Do you love to cook?</p>
+      </div>
+    </footer>
+  </body>
+</html>
